@@ -1,0 +1,40 @@
+8
+
+dir
+62
+http://extrods.googlecode.com/svn/trunk/clients
+http://extrods.googlecode.com/svn
+
+
+
+2008-07-08T23:03:16.274783Z
+62
+iktome@sdsc.edu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bf975364-974c-0410-93c1-575b8fb0c566
+
+web2
+dir
+
+jargon
+dir
+
+prods
+dir
+
+web
+dir
+

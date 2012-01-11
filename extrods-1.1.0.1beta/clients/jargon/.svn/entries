@@ -1,0 +1,91 @@
+8
+
+dir
+62
+http://extrods.googlecode.com/svn/trunk/clients/jargon
+http://extrods.googlecode.com/svn
+
+
+
+2008-07-03T00:15:24.947602Z
+58
+iktome@sdsc.edu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bf975364-974c-0410-93c1-575b8fb0c566
+
+LICENSE.txt
+file
+
+
+
+
+2008-07-09T23:08:01.000000Z
+997a62528e4ebd83be2d9ea51821cb4a
+2008-05-06T23:01:11.952509Z
+3
+iktome@sdsc.edu
+
+developer-only
+dir
+
+doc
+dir
+
+lib
+dir
+
+src
+dir
+
+bin
+dir
+
+README.txt
+file
+
+
+
+
+2008-07-09T23:08:01.000000Z
+99e77b056c35a7373a2cf5bb314ff6af
+2008-05-06T23:01:11.952509Z
+3
+iktome@sdsc.edu
+
+README_GSI.txt
+file
+
+
+
+
+2008-07-09T23:08:01.000000Z
+b30f035d29035f98e99d5e46564973c3
+2008-05-06T23:01:11.952509Z
+3
+iktome@sdsc.edu
+
+build.xml
+file
+
+
+
+
+2008-07-09T23:08:01.000000Z
+5981a994552bd28d5e850b86ab182723
+2008-05-06T23:01:11.952509Z
+3
+iktome@sdsc.edu
+

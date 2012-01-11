@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb
+END
+SRBMetaDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBMetaDataSet.java
+END
+SRBAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBAccount.java
+END
+GSIAuth.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/GSIAuth.java
+END
+SRBException.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBException.java
+END
+SRBProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBProtocol.java
+END
+SRBCommands.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBCommands.java
+END
+SRBMetaDataCommands.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBMetaDataCommands.java
+END
+SRBRandomAccessFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBRandomAccessFile.java
+END
+SRBFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBFileInputStream.java
+END
+SRBMetaDataRecordList.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBMetaDataRecordList.java
+END
+SRBFileOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBFileOutputStream.java
+END
+SRBFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBFile.java
+END
+SRBContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBContainer.java
+END
+SRBFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBFileSystem.java
+END
+SRBShadowFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/srb/SRBShadowFile.java
+END

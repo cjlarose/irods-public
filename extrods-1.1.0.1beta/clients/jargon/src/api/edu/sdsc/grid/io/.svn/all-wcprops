@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/58/trunk/clients/jargon/src/api/edu/sdsc/grid/io
+END
+GeneralRandomAccessFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralRandomAccessFile.java
+END
+Protocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/Protocol.java
+END
+MetaDataValueEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataValueEnum.java
+END
+FileFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/39/trunk/clients/jargon/src/api/edu/sdsc/grid/io/FileFactory.java
+END
+RemoteAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/39/trunk/clients/jargon/src/api/edu/sdsc/grid/io/RemoteAccount.java
+END
+GeneralFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralFileInputStream.java
+END
+GeneralFileOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralFileOutputStream.java
+END
+Host.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/Host.java
+END
+UserMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/UserMetaData.java
+END
+FileMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/FileMetaData.java
+END
+DublinCoreMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/DublinCoreMetaData.java
+END
+GeneralAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralAccount.java
+END
+RemoteFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/39/trunk/clients/jargon/src/api/edu/sdsc/grid/io/RemoteFile.java
+END
+RemoteFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/RemoteFileSystem.java
+END
+StandardMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/StandardMetaData.java
+END
+DirectoryMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/DirectoryMetaData.java
+END
+MetaDataRecordList.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataRecordList.java
+END
+ZoneMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/ZoneMetaData.java
+END
+GeneralFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralFile.java
+END
+RemoteRandomAccessFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/RemoteRandomAccessFile.java
+END
+GeneralMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralMetaData.java
+END
+MetaDataSelect.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataSelect.java
+END
+GeneralFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/39/trunk/clients/jargon/src/api/edu/sdsc/grid/io/GeneralFileSystem.java
+END
+MetaDataField.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataField.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/Base64.java
+END
+MetaDataCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataCondition.java
+END
+BinaryDataFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/BinaryDataFormat.java
+END
+RemoteFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/RemoteFileInputStream.java
+END
+ResourceMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/ResourceMetaData.java
+END
+MetaDataTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataTable.java
+END
+RemoteFileOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/RemoteFileOutputStream.java
+END
+MetaDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataSet.java
+END
+ProtocolCatalog.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/ProtocolCatalog.java
+END
+MetaDataGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/clients/jargon/src/api/edu/sdsc/grid/io/MetaDataGroup.java
+END
