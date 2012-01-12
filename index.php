@@ -4,8 +4,7 @@ require_once BASE_DIR . 'extrods-1.1.0.1beta/clients/prods/src/Prods.inc.php';
 require_once BASE_DIR . 'config.php';
 // make an iRODS account object for connection, assuming:
 // username: demouser, password: demopass, server: srbbrick15.sdsc.edu, port: 1247
-$account = new RODSAccount("srbbrick15.sdsc.edu", 1247, "demouser", "demopass");
-
+$account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
 //create an file object for read, assuming the path is "/tempZone/home/demouser/test_read.txt"
 $myfile=new ProdsFile($account,"/tempZone/home/demouser/test_read.txt");
 
