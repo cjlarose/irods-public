@@ -130,9 +130,9 @@ class ProdsDir extends ProdsPath
   {
     $this->all_children=array();
     $this->all_children=array_merge($this->all_children,
-      $this->getChildrenFiles());
+      $this->getChildFiles());
     $this->all_children=array_merge($this->all_children,
-      $this->getChildrenDirs());
+      $this->getChildDirs());
     return $this->all_children;  
   }
   
