@@ -37,7 +37,7 @@ function element($tag_name, $content = '', $attributes = NULL) {
 
 function base_url($path = '') {
 
-	return "http://buhl.iplantcollaborative.org/irods-public" . $path;
+	return "http://buhl.iplantcollaborative.org/irods-public/" . $path;
 
 }
 

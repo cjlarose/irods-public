@@ -13,9 +13,16 @@ $query = $_SERVER['QUERY_STRING'];
 if ($query == "") {
 
 	$home = new ProdsDir($account,"/" . $config['zone'] .  "/home/cjlarose");
-
-	echo list_directory($home);
-
+	
+	//echo list_directory($home);
+	$data = array();
+	$data['dir'] = $home;
+	ob_start();
+	extract($data);
+	require_once BASE_DIR . 'template.php'; 
+	$html = ob_get_clean();
+	echo $html;
+	//var_dump($html);
 } else {
 	$file = new ProdsFile($account, $query);
 	if ($file->exists()) {
