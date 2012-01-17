@@ -21,7 +21,6 @@
   <body>
 	<div id="file-tree">
 	</div>
-	<?php echo list_directory($dir); ?>
     <footer>
     </footer>
   </body>	

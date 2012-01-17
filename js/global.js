@@ -1,5 +1,5 @@
 $(document).ready( function() {
-	$('#file-tree').fileTree({ root: '/some/folder/' }, function(file) {
+	$('#file-tree').fileTree({ root: '/iplant/home/cjlarose' }, function(file) {
 		alert(file);
 	});
 });

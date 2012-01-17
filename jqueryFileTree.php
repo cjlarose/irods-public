@@ -1,7 +1,16 @@
+<?php
+define('BASE_DIR', dirname(__FILE__) . '/');
+require_once BASE_DIR . 'extrods-1.1.0.1beta/clients/prods/src/Prods.inc.php';
+require_once BASE_DIR . 'config.php';
+require_once BASE_DIR . 'utils.php';
+// make an iRODS account object for connection, assuming:
+// username: demouser, password: demopass, server: srbbrick15.sdsc.edu, port: 1247
+$account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
 
-<ul class="jqueryFileTree" style="display: none;">
-    <li class="directory collapsed"><a href="#" rel="/this/folder/">Folder Name</a></li>
-    (additional folders here)
-    <li class="file ext_txt"><a href="#" rel="/this/folder/filename.txt">filename.txt</a></li>
-    (additional files here)
-</ul>
+$query = array_key_exists('dir', $_POST) ? $_POST['dir'] : $_GET['dir'];
+//var_dump($query);
+$dir = new ProdsDir($account, $query);
+if ($dir->exists()) {
+	echo list_directory($dir);
+}
+?>
