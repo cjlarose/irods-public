@@ -8,12 +8,11 @@
       </script>
     <![endif]-->
     <style>
-      body { margin:50px; }
       article, aside, figure, footer, header, hgroup, menu, nav, section { 
         display:block;
       }
     </style>
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("global.css"); ?>" />
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("css/global.css"); ?>" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.css"); ?>" />
 	<script src="<?php echo base_url("js/jquery-1.7.1.min.js"); ?>"></script>
 	<script src="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.js"); ?>"></script>
