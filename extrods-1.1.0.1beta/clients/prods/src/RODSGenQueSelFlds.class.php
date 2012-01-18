@@ -35,7 +35,10 @@ class RODSGenQueSelFlds
           'PERR_USER_INPUT_ERROR');
       }
       $this->indexes[]=$GLOBALS['PRODS_GENQUE_NUMS']["$name"];
-      $this->attrs[]=RODSGenQueSelFlds::attr2GenQueNumber($attrs[$i]);
+      if (array_key_exists($i, $attrs))
+		$this->attrs[]=RODSGenQueSelFlds::attr2GenQueNumber($attrs[$i]);
+      else 
+		$this->attrs[] = NULL;
     }
     
   }

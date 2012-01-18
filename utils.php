@@ -53,12 +53,14 @@ function list_directory($dir) {
 	foreach ($children as $child) { 
 		$child_class = get_class($child);
 		if ($child_class == "ProdsFile") {
-			
+			//var_dump($child->getReplInfo());
+			$repl_info = $child->getReplInfo();
+			//var_dump($repl_info);
 			$li_contents = element('a', $child->getName(), array('href' => base_url($child->path_str), 'rel' => $child->path_str));
 			$directory_items[] = element('li', $li_contents, array('class' => 'file'));
 
 		} elseif ($child_class == "ProdsDir") {
-			
+						
 			$li_contents = element('a', $child->getName(), array('href' => base_url(trim($child->path_str, '/')), 'rel' => $child->path_str . '/'));
 			$directory_items[] = element('li', $li_contents, array('class' => 'directory collapsed'));
 
