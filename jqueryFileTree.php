@@ -10,7 +10,17 @@ $account = new RODSAccount($config['server'], $config['port'], $config['username
 $query = array_key_exists('dir', $_POST) ? $_POST['dir'] : $_GET['dir'];
 //var_dump($query);
 $dir = new ProdsDir($account, $query);
-if ($dir->exists()) {
-	echo list_directory($dir);
+
+function is_valid_directory($dir) {
+//	echo $dir->path_str;
+	if ($dir->exists()) 
+		return TRUE;
+	return FALSE;
 }
-?>
+
+if ($dir->exists() && is_valid_directory($dir)) {
+	echo list_directory($dir);
+} else {
+	exit;
+}
+

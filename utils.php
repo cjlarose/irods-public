@@ -54,12 +54,12 @@ function list_directory($dir) {
 		$child_class = get_class($child);
 		if ($child_class == "ProdsFile") {
 			
-			$li_contents = element('a', $child->getName(), array('href' => '#', 'rel' => $child->path_str));
+			$li_contents = element('a', $child->getName(), array('href' => base_url($child->path_str), 'rel' => $child->path_str));
 			$directory_items[] = element('li', $li_contents, array('class' => 'file'));
 
 		} elseif ($child_class == "ProdsDir") {
 			
-			$li_contents = element('a', $child->getName(), array('href' => '#', 'rel' => $child->path_str . '/'));
+			$li_contents = element('a', $child->getName(), array('href' => base_url(trim($child->path_str, '/')), 'rel' => $child->path_str . '/'));
 			$directory_items[] = element('li', $li_contents, array('class' => 'directory collapsed'));
 
 		}
@@ -67,7 +67,6 @@ function list_directory($dir) {
 
 	$ul_contents = implode("\n", $directory_items);
 	return element('ul', $ul_contents, array('class' => 'jqueryFileTree'));//, 'style' => 'display:none;'));
-	//echo get_class($child) . " " . $child->getName() . "<br />";
 }
 
 function list_directory_old($dir) {
