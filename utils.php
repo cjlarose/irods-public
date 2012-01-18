@@ -50,15 +50,14 @@ function size_to_human($bytes, $precision = 0) {
 		'TB' => 1024 * 1024 * 1024 * 1024,
 		'GB' => 1024 * 1024 * 1024,
 		'MB' => 1024 * 1024,
-		'KB' => 1024,
-		'B' => 0
+		'KB' => 1024
 	);
 
 	foreach ($byte_table as $unit => $threshold) {
 		if ($bytes >= $threshold)
 			return round($bytes / $threshold, $precision) . $unit;
 	}
-	return FALSE;
+	return $bytes . 'B';
 }
 
 function list_directory($dir) {
