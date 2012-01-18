@@ -12,13 +12,13 @@ $query = array_key_exists('dir', $_POST) ? $_POST['dir'] : $_GET['dir'];
 $dir = new ProdsDir($account, $query);
 
 function is_valid_directory($dir) {
-//	echo $dir->path_str;
-	if ($dir->exists()) 
+	global $config;
+	if ($dir->exists() && substr($dir->path_str, 0, strlen($config['path'])) == $config['path']) 
 		return TRUE;
 	return FALSE;
 }
 
-if ($dir->exists() && is_valid_directory($dir)) {
+if (is_valid_directory($dir)) {
 	echo list_directory($dir);
 } else {
 	exit;
