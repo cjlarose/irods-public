@@ -5,7 +5,6 @@ require_once BASE_DIR . 'config.php';
 require_once BASE_DIR . 'utils.php';
 // make an iRODS account object for connection, assuming:
 // username: demouser, password: demopass, server: srbbrick15.sdsc.edu, port: 1247
-$account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
 
 #pr($_SERVER['QUERY_STRING']);
 $query = $_SERVER['QUERY_STRING'];
@@ -15,8 +14,9 @@ $data = array();
 if ($query == "") {
 	$data['dir'] = $config['path'];
 } else {
+	$account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
 	$file = new ProdsFile($account, $query);
-	if ($file->exists()) {
+	if (is_valid_directory($file)) {
 		header('Content-Description: File Transfer');
 		header('Content-Type: application/octet-stream');
 		#header('Content-Disposition: attachment; filename=' . basename($file));

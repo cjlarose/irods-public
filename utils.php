@@ -93,3 +93,11 @@ function list_directory_old($dir) {
 	echo element('ul', $ul_contents);
 	//echo get_class($child) . " " . $child->getName() . "<br />";
 }
+
+
+function is_valid_directory($dir) {
+	global $config;
+	if ($dir->exists() && substr($dir->path_str, 0, strlen($config['path'])) == $config['path']) 
+		return TRUE;
+	return FALSE;
+}
