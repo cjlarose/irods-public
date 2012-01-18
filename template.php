@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset=utf-8>
-    <title>A simple HTML5 page layout</title>
+    <title>iPlant Public Files</title>
     <!--[if IE]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
       </script>
@@ -13,6 +13,7 @@
         display:block;
       }
     </style>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("global.css"); ?>" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.css"); ?>" />
 	<script src="<?php echo base_url("js/jquery-1.7.1.min.js"); ?>"></script>
 	<script src="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.js"); ?>"></script>

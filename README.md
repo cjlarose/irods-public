@@ -4,6 +4,8 @@ iRODS Public Webapp
 Requisites
 ----------
 php-xml
+apache mod_rewrite
+apache Options FollowSymLinks
 
 Installation
 ------------

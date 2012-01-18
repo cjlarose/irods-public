@@ -1,0 +1,17 @@
+.jqueryFileTree li.file a {
+	clear: both;
+	overflow: hidden;
+}
+.jqueryFileTree li.file span {
+	float: left; 
+	padding-right: 1em;
+}
+.jqueryFileTree li.file span.filename {
+	width: 30em;
+}
+.jqueryFileTree li.file span.filesize {
+	width: 10em;
+}
+.jqueryFileTree li.file span.mdate {
+	width: 10em;
+}
