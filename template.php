@@ -21,6 +21,11 @@
   </head>
   <body>
 	<h1><?php echo $dir; ?></h1>
+	<div id="headers">
+		<span>File name</span>
+		<span>Size</span>
+		<span>Last modified</span>
+	</div>
 	<div id="file-tree">
 	</div>
     <footer>

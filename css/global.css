@@ -4,6 +4,15 @@ body {
 	margin: 50px;
 }
 
+html { font-size:100.01%; }
+body {
+  font-size: 75%;
+  color: #222;
+  background: #fff;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
 /* Headings
 -------------------------------------------------------------- */
 
@@ -16,6 +25,33 @@ h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
 h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
 h6 { font-size: 1em; font-weight: bold; }
 
+#headers {
+	position: relative;
+	overflow: hidden;
+}
+#headers span {
+	float: left;
+	padding-right: 1em;
+}
+#headers span:first-child {
+	padding-left: 22px;
+	width: 30em;
+}
+#headers span + span {
+	width: 10em;
+}
+#headers span + span + span {
+	width: 10em;
+}
+
+ul.jqueryFileTree {
+	font-family: "Helvetica Neue", Ariel, Helvetica, sans-serif !important;
+	font-size: 1em !important;
+	line-height: 2 !important;
+}
+ul.jqueryFileTree li {
+	background-position: left 3px !important;
+}
 
 .jqueryFileTree li.file a {
 	clear: both;
