@@ -45,6 +45,21 @@ function anchor($contents, $path) {
 	return element('a', $contents, array('href' => base_url($path)));
 }
 
+function size_to_human($bytes, $precision = 0) {
+	$byte_table = array(
+		'TB' => 1024 * 1024 * 1024 * 1024,
+		'GB' => 1024 * 1024 * 1024,
+		'MB' => 1024 * 1024,
+		'KB' => 1024
+	);
+
+	foreach ($byte_table as $unit => $threshold) {
+		if ($bytes >= $threshold)
+			return round($bytes / $threshold, $precision) . $unit;
+	}
+	return $bytes . 'B';
+}
+
 function list_directory($dir) {
 	$children = $dir->getAllChildren();
 
@@ -55,13 +70,25 @@ function list_directory($dir) {
 		if ($child_class == "ProdsFile") {
 			//var_dump($child->getReplInfo());
 			$repl_info = $child->getReplInfo();
-			//var_dump($repl_info);
-			$li_contents = element('a', $child->getName(), array('href' => base_url($child->path_str), 'rel' => $child->path_str));
+			//pr($repl_info[0]);
+			$size = size_to_human($repl_info[0]['size'] * 1, 2);
+			$mtime = date('m/d/Y H:i:s T', $repl_info[0]['mtime'] * 1);
+			
+			$a_contents = element('span', $child->getName(), array('class' => 'filename'));
+			$a_contents .= element('span', $size, array('class' => 'filesize')); 
+			$a_contents .= element('span', $mtime, array('class' => 'mdate'));
+			$li_contents = element('a', $a_contents, array(
+				'href' => base_url(trim($child->path_str, '/')), 
+				'rel' => $child->path_str
+			));
 			$directory_items[] = element('li', $li_contents, array('class' => 'file'));
 
 		} elseif ($child_class == "ProdsDir") {
 						
-			$li_contents = element('a', $child->getName(), array('href' => base_url(trim($child->path_str, '/')), 'rel' => $child->path_str . '/'));
+			$li_contents = element('a', $child->getName(), array(
+				'href' => base_url(trim($child->path_str, '/')), 
+				'rel' => $child->path_str . '/'
+			));
 			$directory_items[] = element('li', $li_contents, array('class' => 'directory collapsed'));
 
 		}
