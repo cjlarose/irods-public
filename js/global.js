@@ -1,7 +1,6 @@
 $(document).ready( function() {
 
 	relative_path = dir.substring(root.length + 1);
-	console.log(relative_path);
 	$('#file-tree').fileTree(
 		{ 
 			root: root, 

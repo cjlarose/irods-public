@@ -50,7 +50,7 @@ if(jQuery) (function($){
 			$(this).each( function() {
 				
 				function showTree(c, t, path_array) {
-					console.log(path_array);
+					//console.log(path_array);
 					$(c).addClass('wait');
 					$(".jqueryFileTree.start").remove();
 					$.post(o.script, { dir: t }, function(data) {
@@ -66,7 +66,7 @@ if(jQuery) (function($){
 				}
 				
 				function bindTree(t, path_array) {
-					$(t).find('LI A').bind(o.folderEvent, function() {
+					$(t).find('LI A').bind(o.folderEvent, function(e) {
 						if( $(this).parent().hasClass('directory') ) {
 							if( $(this).parent().hasClass('collapsed') ) {
 								// Expand
@@ -75,7 +75,10 @@ if(jQuery) (function($){
 									$(this).parent().parent().find('LI.directory').removeClass('expanded').addClass('collapsed');
 								}
 								$(this).parent().find('UL').remove(); // cleanup
-								showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )), path_array.slice(1) );
+								if (path_array != undefined)
+									showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )), path_array.slice(1) );
+								else 
+									showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )) );
 								$(this).parent().removeClass('collapsed').addClass('expanded');
 							} else {
 								// Collapse
@@ -88,12 +91,13 @@ if(jQuery) (function($){
 						return false;
 					});
 					//$(t).find('li.directory a').first().trigger(o.folderEvent);
-					if (path_array != undefined)
+					if (path_array != undefined) {
 						$(t).find('li.directory a').each(function(i, e) {
 							//console.log(e, path_array);
 							if ($(e).html() == path_array[0]) 
-								$(e).trigger(o.folderEvent);
+								$(e).click()//.triggerHandler(o.folderEvent);
 						});
+					}
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
 				}
