@@ -25,9 +25,14 @@ $(document).ready( function() {
 		}
 	}
 
-	$('#file-tree').fileTree({ root: root, script: 'http://buhl.iplantcollaborative.org/irods-public/jqueryFileTree.php' }, function(file) {
-		//alert(file);
-		window.location.replace('http://buhl.iplantcollaborative.org/irods-public' + file);
-	}, function() {open_sub_tree(root, dir)});
+	$('#file-tree').fileTree(
+		{ 
+			root: root, 
+			script: 'http://buhl.iplantcollaborative.org/irods-public/jqueryFileTree.php',
+			dir: 'analyses/job1-2011-12-29-21-51-18.282/logs' //http://buhl.iplantcollaborative.org/irods-public/iplant/home/cjlarose/analyses/job1-2011-12-29-21-51-18.282 
+		}, 
+		function(file) {
+			window.location.replace('http://buhl.iplantcollaborative.org/irods-public' + file);
+		}/*, function() {open_sub_tree(root, dir)}*/ );
 
 });
