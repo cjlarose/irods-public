@@ -66,6 +66,7 @@ if(jQuery) (function($){
 				}
 				
 				function bindTree(t, path_array) {
+					//console.log(path_array);
 					$(t).find('LI A').bind(o.folderEvent, function(e) {
 						if( $(this).parent().hasClass('directory') ) {
 							if( $(this).parent().hasClass('collapsed') ) {
@@ -75,9 +76,10 @@ if(jQuery) (function($){
 									$(this).parent().parent().find('LI.directory').removeClass('expanded').addClass('collapsed');
 								}
 								$(this).parent().find('UL').remove(); // cleanup
-								if (path_array != undefined)
-									showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )), path_array.slice(1) );
-								else 
+								if (path_array != undefined) {
+									path_array = path_array.slice(1);
+									showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )), path_array );
+								} else 
 									showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )) );
 								$(this).parent().removeClass('collapsed').addClass('expanded');
 							} else {
