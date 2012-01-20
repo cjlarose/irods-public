@@ -45,7 +45,7 @@ if(jQuery) (function($){
 			if( o.collapseEasing == undefined ) o.collapseEasing = null;
 			if( o.multiFolder == undefined ) o.multiFolder = true;
 			if( o.loadMessage == undefined ) o.loadMessage = 'Loading...';
-			if (o.dir == undefined) o.dir = null;
+			if (o.dir == undefined || o.dir == '') o.dir = null;
 			//if (cb == undefined) cb = function() {};	
 			$(this).each( function() {
 				
@@ -88,11 +88,12 @@ if(jQuery) (function($){
 						return false;
 					});
 					//$(t).find('li.directory a').first().trigger(o.folderEvent);
-					$(t).find('li.directory a').each(function(i, e) {
-						//console.log(e, path_array);
-						if ($(e).html() == path_array[0]) 
-							$(e).trigger(o.folderEvent);
-					});
+					if (path_array != undefined)
+						$(t).find('li.directory a').each(function(i, e) {
+							//console.log(e, path_array);
+							if ($(e).html() == path_array[0]) 
+								$(e).trigger(o.folderEvent);
+						});
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
 				}
