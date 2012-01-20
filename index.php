@@ -17,14 +17,15 @@ if ($query == "") {
 	$account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
 	$file = new ProdsFile($account, $query);
 	if (is_valid_directory($file)) {
+		$repl_info = $file->getReplInfo();
 		header('Content-Description: File Transfer');
 		header('Content-Type: application/octet-stream');
-		#header('Content-Disposition: attachment; filename=' . basename($file));
+		header('Content-Disposition: attachment; filename=' . $file->getName());
 		header('Content-Transfer-Encoding: binary');
 		header('Expires: 0');
 		header('Cache-Control: must-revalidate');
 		header('Pragma: public');
-		#header('Content-Length: ' . filesize($file));
+		header('Content-Length: ' . $repl_info[0]['size']*1);
 		ob_clean();
 		flush();
 		$file->open("r");

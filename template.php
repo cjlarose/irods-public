@@ -20,7 +20,7 @@
 	<script src="<?php echo base_url("js/global.js"); ?>"></script>
   </head>
   <body>
-	<h1><?php echo "iRODS public files";//echo $dir; ?></h1>
+	<h1><?php echo "iPlant public files";//echo $dir; ?></h1>
 	<div id="headers">
 		<span>File name</span>
 		<span>Size</span>
