@@ -1,6 +1,6 @@
-@import url("reset.css") screen, print;
+/*@import url("reset.css") screen, print;*/
 
-body {
+/*body {
 	margin: 50px;
 }
 
@@ -11,12 +11,12 @@ body {
   background: #fff;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 1.5;
-}
+}*/
 
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+/*h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
 
 h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
 h2 { font-size: 2em; margin-bottom: 0.75em; }
@@ -24,7 +24,9 @@ h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
 h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
 h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
 h6 { font-size: 1em; font-weight: bold; }
+*/
 
+h2 {margin-bottom: .75em}
 #headers {
 	position: relative;
 	overflow: hidden;
@@ -35,7 +37,7 @@ h6 { font-size: 1em; font-weight: bold; }
 }
 #headers span:first-child {
 	padding-left: 22px;
-	width: 30em;
+	width: 27em;
 }
 #headers span + span {
 	width: 10em;
@@ -50,6 +52,7 @@ ul.jqueryFileTree {
 	line-height: 2 !important;
 }
 ul.jqueryFileTree li {
+	line-height: 2;
 	background-position: left 3px !important;
 }
 
@@ -62,7 +65,10 @@ ul.jqueryFileTree li {
 	padding-right: 1em;
 }
 .jqueryFileTree li.file span.filename {
-	width: 30em;
+	width: 27em;
+}
+.jqueryFileTree li li.file span.filename {
+	width: 17em;
 }
 .jqueryFileTree li.file span.filesize {
 	width: 10em;
