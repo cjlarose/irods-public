@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>iPlant Public Files</title>
+    <title>Bootstrap, from Twitter</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="<?php echo base_url("bootstrap/bootstrap.min.css"); ?>" rel="stylesheet">
+    <link href="../bootstrap.css" rel="stylesheet">
     <style type="text/css">
       /* Override some defaults */
       html, body {
@@ -25,6 +25,7 @@
         text-align: center; /* center align it with the container */
       }
       .container {
+        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
       }
 
       /* The white background content wrapper */
@@ -64,12 +65,12 @@
       }
 
     </style>
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("css/global.css"); ?>" />
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.css"); ?>" />
-	<script src="<?php echo base_url("js/jquery-1.7.1.min.js"); ?>"></script>
-	<script src="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.js"); ?>"></script>
-	<script type="text/javascript">var root = "<?php echo $config['path']; ?>"; var dir = "<?php echo $dir; ?>";</script>
-	<script src="<?php echo base_url("js/global.js"); ?>"></script>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
 
   <body>
@@ -77,12 +78,17 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="#">iPlant Public Files</a>
+          <a class="brand" href="#">Project name</a>
           <ul class="nav">
-            <!--<li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>-->
+            <li><a href="#contact">Contact</a></li>
           </ul>
+          <form action="" class="pull-right">
+            <input class="input-small" type="text" placeholder="Username">
+            <input class="input-small" type="password" placeholder="Password">
+            <button class="btn" type="submit">Sign in</button>
+          </form>
         </div>
       </div>
     </div>
@@ -90,27 +96,21 @@
     <div class="container">
 
       <div class="content">
-        <!--<div class="page-header">
+        <div class="page-header">
           <h1>Page name <small>Supporting text or tagline</small></h1>
-        </div>-->
+        </div>
         <div class="row">
-          <div class="span12">
-            <h2>File explorer</h2>
-		<div id="headers">
-			<span>File name</span>
-			<span>Size</span>
-			<span>Last modified</span>
-		</div>
-		<div id="file-tree"></div>
+          <div class="span10">
+            <h2>Main content</h2>
           </div>
           <div class="span4">
-            <!--<h3>Secondary content</h3>-->
+            <h3>Secondary content</h3>
           </div>
         </div>
       </div>
 
       <footer>
-        <p>iPlant Collaborative <?php echo date('Y'); ?></p>
+        <p>&copy; Company 2012</p>
       </footer>
 
     </div> <!-- /container -->
