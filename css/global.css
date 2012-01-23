@@ -77,7 +77,16 @@ ul.jqueryFileTree li {
 	right: 0;
 	width: 12em;
 }
-
+.jqueryFileTree li input.share {
+	position: absolute;
+	right: 24em;
+	top: 1px;
+	display: none;
+	padding: 3px 9px 4px;
+}
+.jqueryFileTree li:hover > input.share {
+	display: block;
+}
 /**
  * Extensions!
  */
