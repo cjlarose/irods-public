@@ -29,21 +29,22 @@ h6 { font-size: 1em; font-weight: bold; }
 h2 {margin-bottom: .75em}
 #headers {
 	position: relative;
-	overflow: hidden;
 }
 #headers span {
-	float: left;
-	padding-right: 1em;
+	font-weight: bold;
 }
 #headers span:first-child {
 	padding-left: 22px;
-	width: 27em;
 }
 #headers span + span {
-	width: 10em;
+	position: absolute;
+	right: 18em;
+	width: 5em;
 }
 #headers span + span + span {
-	width: 10em;
+	position: absolute;
+	right: 0;
+	width: 12em;
 }
 
 ul.jqueryFileTree {
@@ -54,27 +55,27 @@ ul.jqueryFileTree {
 ul.jqueryFileTree li {
 	line-height: 2;
 	background-position: left 3px !important;
+	position: relative;
 }
 
 .jqueryFileTree li.file a {
-	clear: both;
-	overflow: hidden;
 }
 .jqueryFileTree li.file span {
-	float: left; 
-	padding-right: 1em;
 }
 .jqueryFileTree li.file span.filename {
-	width: 27em;
+	
 }
 .jqueryFileTree li li.file span.filename {
-	width: 17em;
 }
 .jqueryFileTree li.file span.filesize {
-	width: 10em;
+	position: absolute;
+	right: 18em;
+	width: 5em;
 }
 .jqueryFileTree li.file span.mdate {
-	width: 10em;
+	position: absolute;
+	right: 0;
+	width: 12em;
 }
 
 /**
