@@ -38,12 +38,12 @@ h2 {margin-bottom: .75em}
 }
 #headers span + span {
 	position: absolute;
-	right: 18em;
+	right: 24em;
 	width: 5em;
 }
 #headers span + span + span {
 	position: absolute;
-	right: 0;
+	right: 6em;
 	width: 12em;
 }
 
@@ -69,15 +69,24 @@ ul.jqueryFileTree li {
 }
 .jqueryFileTree li.file span.filesize {
 	position: absolute;
-	right: 18em;
+	right: 24em;
 	width: 5em;
 }
 .jqueryFileTree li.file span.mdate {
 	position: absolute;
-	right: 0;
+	right: 6em;
 	width: 12em;
 }
-
+.jqueryFileTree li input.share {
+	position: absolute;
+	right: 0;
+	top: 1px;
+	display: none;
+	padding: 3px 9px 4px;
+}
+.jqueryFileTree li:hover > input.share {
+	display: block;
+}
 /**
  * Extensions!
  */
