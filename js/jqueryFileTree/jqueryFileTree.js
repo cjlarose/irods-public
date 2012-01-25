@@ -100,7 +100,12 @@ if(jQuery) (function($){
 								$(e).click()//.triggerHandler(o.folderEvent);
 						});
 					}
-					
+				
+					$(t).find('li').mouseenter(function() {
+						$(t).find('button').hide();
+						$(t).find('li:hover > button').last().show();
+					});
+						
 					// copy url button
 					$(t).find('li button').show().zclip({
 						path: 'http://buhl.iplantcollaborative.org/irods-public/js/ZeroClipboard.swf',

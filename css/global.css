@@ -85,8 +85,9 @@ ul.jqueryFileTree li {
 	padding: 3px 9px 4px;
 }
 .jqueryFileTree li:hover > button.share {
-	display: block;
+/*	display: block;*/
 }
+
 /**
  * Extensions!
  */
