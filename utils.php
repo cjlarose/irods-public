@@ -107,6 +107,11 @@ function list_directory($dir) {
 				'href' => base_url(trim($child->path_str, '/')), 
 				'rel' => $child->path_str . '/'
 			));
+			
+			$li_contents .= element('button', 'Copy URL', array(
+				'class' => 'btn share'
+			));
+
 			$directory_items[] = element('li', $li_contents, array('class' => 'directory collapsed'));
 
 		}
