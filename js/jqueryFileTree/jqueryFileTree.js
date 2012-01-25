@@ -104,12 +104,7 @@ if(jQuery) (function($){
 					// copy url button
 					$(t).find('li button').show().zclip({
 						path: 'http://buhl.iplantcollaborative.org/irods-public/js/ZeroClipboard.swf',
-						copy: 'hello',//function() {return $('#copytext').val();},
-						/*beforeCopy: function() {
-							console.log(this);
-							url = $(this).prev().attr('href');
-							$('#copytext').html(url);
-						}*/
+						copy: function() {return $(this).prev().attr('href');}
 					}).attr('style', '');
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
