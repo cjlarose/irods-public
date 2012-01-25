@@ -91,10 +91,8 @@ function list_directory($dir) {
 				'rel' => $child->path_str
 			));
 
-			$li_contents .= element('input', NULL, array(
-				'class' => 'btn share',
-				'type' => 'button',
-				'value' => 'Copy URL'
+			$li_contents .= element('button', 'Copy URL', array(
+				'class' => 'btn share'
 			));
 
 			$file_extension_class = get_file_extension_class($child->getName());
