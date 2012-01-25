@@ -90,6 +90,11 @@ function list_directory($dir) {
 				'href' => base_url(trim($child->path_str, '/')), 
 				'rel' => $child->path_str
 			));
+
+			$li_contents .= element('button', 'Copy URL', array(
+				'class' => 'btn share'
+			));
+
 			$file_extension_class = get_file_extension_class($child->getName());
 			$li_class = "file";
 			if ($file_extension_class != FALSE)
@@ -102,6 +107,11 @@ function list_directory($dir) {
 				'href' => base_url(trim($child->path_str, '/')), 
 				'rel' => $child->path_str . '/'
 			));
+			
+			$li_contents .= element('button', 'Copy URL', array(
+				'class' => 'btn share'
+			));
+
 			$directory_items[] = element('li', $li_contents, array('class' => 'directory collapsed'));
 
 		}

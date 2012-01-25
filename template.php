@@ -68,6 +68,7 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.css"); ?>" />
 	<script src="<?php echo base_url("js/jquery-1.7.1.min.js"); ?>"></script>
 	<script src="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.js"); ?>"></script>
+	<script src="<?php echo base_url("js/jquery.zclip.min.js"); ?>"></script>
 	<script type="text/javascript">var root = "<?php echo $config['path']; ?>"; var dir = "<?php echo $dir; ?>";</script>
 	<script src="<?php echo base_url("js/global.js"); ?>"></script>
   </head>
