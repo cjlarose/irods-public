@@ -1,7 +1,5 @@
 $(document).ready( function() {
 	
-	$('body').append('<textarea id="copytext"></textarea>');
-
 	relative_path = dir.substring(root.length + 1);
 	$('#file-tree').fileTree(
 		{ 
