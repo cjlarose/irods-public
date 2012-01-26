@@ -33,7 +33,7 @@
 if(jQuery) (function($){
 	
 	$.extend($.fn, {
-		fileTree: function(o, h) {
+		fileTree: function(o, h, afterTree) {
 			// Defaults
 			if( !o ) var o = {};
 			if( o.root == undefined ) o.root = '/';
@@ -46,7 +46,7 @@ if(jQuery) (function($){
 			if( o.multiFolder == undefined ) o.multiFolder = true;
 			if( o.loadMessage == undefined ) o.loadMessage = 'Loading...';
 			if (o.dir == undefined || o.dir == '') o.dir = null;
-			//if (cb == undefined) cb = function() {};	
+			if (afterTree == undefined) afterTree = function() {};	
 			$(this).each( function() {
 				
 				function showTree(c, t, path_array) {
@@ -100,21 +100,8 @@ if(jQuery) (function($){
 								$(e).click()//.triggerHandler(o.folderEvent);
 						});
 					}
-				
-					$(t).find('li').mouseenter(function() {
-						$(t).find('button').hide();
-						$(t).find('li:hover > button').last().show();
-					});
-						
-					// copy url button
-					$(t).find('li button').show().zclip({
-						path: 'http://buhl.iplantcollaborative.org/irods-public/js/ZeroClipboard.swf',
-						copy: function() {return $(this).prev().attr('href');},
-						afterCopy: function() {
-							$(t).find('button:disabled').removeAttr('disabled').html('Copy URL');
-							$(this).attr('disabled', 'disabled').html('Copied');
-						}
-					}).attr('style', '');
+					
+					afterTree(t);
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
 				}
