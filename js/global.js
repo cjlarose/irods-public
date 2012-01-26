@@ -4,11 +4,11 @@ $(document).ready( function() {
 	$('#file-tree').fileTree(
 		{ 
 			root: root, 
-			script: 'http://buhl.iplantcollaborative.org/irods-public/jqueryFileTree.php',
+			script: base_url('jqueryFileTree.php'),
 			dir: relative_path 
 		}, 
 		function(file) {
-			window.location.replace('http://buhl.iplantcollaborative.org/irods-public' + file);
+			window.location.replace(base_url(file));
 		}, function (t) {
 				$(t).find('li').mouseenter(function() {
 					$(t).find('button').hide();
@@ -17,7 +17,7 @@ $(document).ready( function() {
 					
 				// copy url button
 				$(t).find('li button').show().zclip({
-					path: 'http://buhl.iplantcollaborative.org/irods-public/js/ZeroClipboard.swf',
+					path: base_url('js/ZeroClipboard.swf'),
 					copy: function() {return $(this).prev().attr('href');},
 					afterCopy: function() {
 						$(t).find('button:disabled').removeAttr('disabled').html('Copy URL');
