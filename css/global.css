@@ -56,7 +56,9 @@ h2 {
 	right: 6em;
 	width: 12em;
 }
-
+#file-tree {
+	margin: .75em 0;
+}
 ul.jqueryFileTree {
 	font-family: "Helvetica Neue", Ariel, Helvetica, sans-serif !important;
 	font-size: 1em !important;
@@ -68,6 +70,9 @@ ul.jqueryFileTree li {
 	position: relative;
 }
 
+.jqueryFileTree a:hover {
+	background: #9ac9d5 !important;
+}
 .jqueryFileTree li.file a {
 }
 .jqueryFileTree li.file span {
