@@ -1,6 +1,18 @@
+body {
+	background-color: #FFF;
+}
+h1 {
+	font-family: inherit;
+	font-size: 14pt;
+	font-style: italic;
+	color: #db6619;
+}
+
 h2 {margin-bottom: .75em}
 #headers {
 	position: relative;
+	border-bottom: #CCC solid 1px;
+    padding-bottom: 10px;
 }
 #headers span {
 	font-weight: bold;
