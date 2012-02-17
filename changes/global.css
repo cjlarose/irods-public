@@ -1,44 +1,45 @@
+/*@import url("reset.css") screen, print;*/
+
+/*body {
+	margin: 50px;
+}
+
+html { font-size:100.01%; }
 body {
-	padding-top: 40px;
+  font-size: 75%;
+  color: #222;
+  background: #fff;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}*/
+
+/* Headings
+-------------------------------------------------------------- */
+
+/*h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+*/
+body {
 	background-color: #FFF;
-	font-family: Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 13px;
-	line-height: 1.5;
-	background-image: url("../imgs/bg.png");
-	background-repeat: repeat-x;
-	color: #404040;
-}
-.container {
-	width: 940px;
-	margin: 0 auto;
-}
-.container > .content {
-	background-color: white;
-	padding: 20px;
-	margin: 0 -20px;
-	-webkit-border-radius: 10px 10px 10px 10px;
-	-moz-border-radius: 10px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-	box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 h1 {
 	font-family: inherit;
 	font-size: 14pt;
 	font-style: italic;
 	color: #db6619;
-	position: relative;
-	top: -10px;
-	display: inline;
 }
-h2 {
-	margin-bottom: .75em
-}
+
+h2 {margin-bottom: .75em}
 #headers {
 	position: relative;
 	border-bottom: #CCC solid 1px;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 #headers span {
 	font-weight: bold;
@@ -101,24 +102,3 @@ ul.jqueryFileTree li {
  */
 .jqueryFileTree li.file.ext_tar-gz {background: url('../js/jqueryFileTree/images/zip.png') left top no-repeat; }
 .jqueryFileTree li.file.ext_rtf {background: url('../js/jqueryFileTree/images/page.png') left top no-repeat; }
-
-/**
- * Footer
- */
-#footer {
-	border-top: #CCC solid 1px;
-	padding-top: 10px;
-	text-align: center;
-}
-#footer a:link, #footer a:visited, #footer a:active {
-	color: #0298AA;
-	text-decoration: none;
-	border-bottom: #0298AA solid 1px;
-	cursor: default;
-}
-#footer a:hover {
-	color: #0298AA;
-	text-decoration: none;
-	border-bottom: #0298AA dashed 1px;
-	cursor: default;
-}
