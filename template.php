@@ -20,27 +20,22 @@
 <div class="container">
 
 <div class="content">
-	<div class="row">
-		<div class="span16">
-			<img src="imgs/logo.jpg" alt="iPlant Collaborative" /> <h1>Public Files</h1>
+		<div id="header">
+			<img src="<?php echo base_url("imgs/logo.jpg"); ?>" alt="iPlant Collaborative" /> <h1>Public Files</h1>
 			<div id="headers">
-			<span>File name</span>
-			<span>Size</span>
-			<span>Last modified</span>
+				<span>File name</span>
+				<span>Size</span>
+				<span>Last modified</span>
 			</div>
+		</div>
 		<div id="file-tree"></div>
-		<br />
-
-		<div class="footer">
+		<div id="footer">
 			<p>
 				<strong>iPlant Collaborative <?php echo date('Y'); ?></strong>
 				<br />
 				<a href="http://www.iplantcollaborative.org" target="_blank">iPlant Collaborative's Website</a> &nbsp; &nbsp; &nbsp; <a href="http://preview.iplantcollaborative.org/de" target="_blank">Discovery Environment</a> &nbsp; &nbsp; &nbsp; <a href="http://atmo-beta.iplantcollaborative.org" target="_blank">Atmosphere</a>
 			</p>
 		</div>
-
-		</div>
-	</div>
 </div>
 
 </div> <!-- /container -->

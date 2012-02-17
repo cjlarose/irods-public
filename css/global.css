@@ -105,18 +105,18 @@ ul.jqueryFileTree li {
 /**
  * Footer
  */
-.footer {
+#footer {
 	border-top: #CCC solid 1px;
 	padding-top: 10px;
 	text-align: center;
 }
-.footer a:link, .footer a:visited, .footer a:active {
+#footer a:link, #footer a:visited, #footer a:active {
 	color: #0298AA;
 	text-decoration: none;
 	border-bottom: #0298AA solid 1px;
 	cursor: default;
 }
-.footer a:hover {
+#footer a:hover {
 	color: #0298AA;
 	text-decoration: none;
 	border-bottom: #0298AA dashed 1px;
