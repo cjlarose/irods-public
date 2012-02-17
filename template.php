@@ -12,30 +12,37 @@
 	<script src="<?php echo base_url("js/jquery.zclip.min.js"); ?>"></script>
 	<script type="text/javascript">function base_url(path) {return '<?php echo BASE_URL; ?>' + path;} var root = "<?php echo $config['path']; ?>"; var dir = "<?php echo $dir; ?>";</script>
 	<script src="<?php echo base_url("js/global.js"); ?>"></script>
-  </head>
+</head>
 
-  <body>
-    <div class="hd">
-          <h1><a class="brand" href="#">iPlant Public Files</a></h1>
-    </div>
+<body>
 
-    <div class="container">
+<div class="container">
 
-      <div class="content">
-            <h2>File explorer</h2>
-		<div id="headers">
+<div class="content">
+	<div class="row">
+		<div class="span16">
+			<img src="imgs/logo.jpg" alt="iPlant Collaborative" /> <h1>Public Files</h1>
+			<div id="headers">
 			<span>File name</span>
 			<span>Size</span>
 			<span>Last modified</span>
-		</div>
+			</div>
 		<div id="file-tree"></div>
-      </div>
+		<br />
 
-      <footer>
-        <p>iPlant Collaborative <?php echo date('Y'); ?></p>
-      </footer>
+		<div class="footer">
+			<p>
+				<strong>iPlant Collaborative <?php echo date('Y'); ?></strong>
+				<br />
+				<a href="http://www.iplantcollaborative.org" target="_blank">iPlant Collaborative's Website</a> &nbsp; &nbsp; &nbsp; <a href="http://preview.iplantcollaborative.org/de" target="_blank">Discovery Environment</a> &nbsp; &nbsp; &nbsp; <a href="http://atmo-beta.iplantcollaborative.org" target="_blank">Atmosphere</a>
+			</p>
+		</div>
 
-    </div> <!-- /container -->
+		</div>
+	</div>
+</div>
 
-  </body>
+</div> <!-- /container -->
+
+</body>
 </html>
