@@ -8,7 +8,8 @@ if ($query == "") {
 	$data['dir'] = $config['path'];
 } else {
 	$account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
-	$file = new ProdsFile($account, $query);
+	$file_name = $config['path'] . $query;
+	$file = new ProdsFile($account, $file_name);
 	if (is_valid_directory($file)) {
 		$repl_info = $file->getReplInfo();
 		header('Content-Description: File Transfer');
