@@ -29,7 +29,7 @@ if ($query == "") {
 		$file->close();
 		exit;
 	} else {
-		$data['dir'] = $query;
+		$data['dir'] = $file_name;
 	}
 }
 

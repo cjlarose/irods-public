@@ -87,7 +87,7 @@ function list_directory($dir) {
 			$a_contents .= element('span', $mtime, array('class' => 'mdate'));
 			
 			$li_contents = element('a', $a_contents, array(
-				'href' => base_url(trim($child->path_str, '/')), 
+				'href' => base_url(rel_path($child->path_str)),
 				'rel' => $child->path_str
 			));
 
@@ -104,7 +104,7 @@ function list_directory($dir) {
 		} elseif ($child_class == "ProdsDir") {
 						
 			$li_contents = element('a', $child->getName(), array(
-				'href' => base_url(trim($child->path_str, '/')), 
+				'href' => base_url(rel_path($child->path_str)),
 				'rel' => $child->path_str . '/'
 			));
 			
@@ -144,6 +144,11 @@ function list_directory_old($dir) {
 	$ul_contents = implode("\n", $directory_items);
 	echo element('ul', $ul_contents);
 	//echo get_class($child) . " " . $child->getName() . "<br />";
+}
+
+function rel_path($path) {
+	global $config;
+	return trim(str_replace($config['path'], '', $path), '/');
 }
 
 
