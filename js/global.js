@@ -1,3 +1,7 @@
+function rel_path(path) {
+	return path.replace(root, "");
+}
+
 $(document).ready( function() {
 	
 	relative_path = dir.substring(root.length + 1);
@@ -8,7 +12,7 @@ $(document).ready( function() {
 			dir: relative_path 
 		}, 
 		function(file) {
-			window.location.replace(base_url(file));
+			window.location.replace(base_url(rel_path(file)));
 		}, function (t) {
 				$(t).find('li').mouseenter(function() {
 					$(t).find('button').hide();
