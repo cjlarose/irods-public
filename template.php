@@ -5,7 +5,8 @@
 	<title>iPlant Public Files</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("css/normalize.css"); ?>" />
+	<!--<link type="text/css" rel="stylesheet" href="<?php echo base_url("css/normalize.css"); ?>" />-->
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("bootstrap/css/bootstrap.min.css"); ?>" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("css/global.css"); ?>" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("js/jqueryFileTree/jqueryFileTree.css"); ?>" />
 	<script src="<?php echo base_url("js/jquery-1.7.1.min.js"); ?>"></script>

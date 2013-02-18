@@ -92,7 +92,7 @@ function list_directory($dir) {
 			));
 
 			$li_contents .= element('button', 'Copy URL', array(
-				'class' => 'btn share'
+				'class' => 'btn share btn-small'
 			));
 
 			$file_extension_class = get_file_extension_class($child->getName());
@@ -109,7 +109,7 @@ function list_directory($dir) {
 			));
 			
 			$li_contents .= element('button', 'Copy URL', array(
-				'class' => 'btn share'
+				'class' => 'btn share btn-small'
 			));
 
 			$directory_items[] = element('li', $li_contents, array('class' => 'directory collapsed'));
