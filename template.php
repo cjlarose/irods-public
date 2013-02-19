@@ -51,8 +51,7 @@
     <p>One fine body…</p>
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
-    <a href="#" class="btn btn-primary">Save changes</a>
+    <a href="#" class="btn btn-primary download-file">Download</a>
   </div>
 </div>
 

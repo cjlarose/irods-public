@@ -9,6 +9,7 @@ function file_ext(path) {
 function display_file_modal(path) {
 	
 	$('#file-modal')
+		.data('path', path)
 		.find('h3').text(rel_path(path)).end()
 		.find('.modal-body').empty().append($('<p>').append('Loading...')).end()
 		.modal();
@@ -24,6 +25,10 @@ function display_file_modal(path) {
 
 }
 
+function open_file(path) {
+	window.location.replace(base_url(rel_path(path)));
+}
+
 $(document).ready( function() {
 	
 	relative_path = dir.substring(root.length + 1);
@@ -34,12 +39,10 @@ $(document).ready( function() {
 			dir: relative_path 
 		}, 
 		function(file) {
-			console.log(file);
-			if ((ext = file_ext(file)) == 'md' || ext == 'markdown' || ext == 'txt') {
+			if ((ext = file_ext(file)) == 'md' || ext == 'markdown' || ext == 'txt')
 				display_file_modal(file);
-			} else {
-				window.location.replace(base_url(rel_path(file)));
-			}
+			else
+				open_file(file);
 		}, function (t) {
 				$(t).find('li').mouseenter(function() {
 					$(t).find('button').hide();
@@ -56,5 +59,11 @@ $(document).ready( function() {
 					}
 				}).attr('style', '');
 		});
+
+	$('#file-modal .download-file').click(function(e) {
+		e.preventDefault();
+		open_file($('#file-modal').data('path'));
+		return false;
+	});
 
 });
