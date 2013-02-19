@@ -2,6 +2,28 @@ function rel_path(path) {
 	return path.replace(root, "");
 }
 
+function file_ext(path) {
+	return path.split('.').pop();
+}
+
+function display_file_modal(path) {
+	
+	$('#file-modal')
+		.find('h3').text(rel_path(path)).end()
+		.find('.modal-body').empty().append($('<p>').append('Loading...')).end()
+		.modal();
+
+	var cb = function(data) {
+		$('#file-modal .modal-body').html(data);
+	};
+
+	if (file_ext(path) == 'txt')
+		$.get(base_url(rel_path(path)), cb);
+	else
+		$.get(base_url('parse_md.php'), {'file': rel_path(path)}, cb);
+
+}
+
 $(document).ready( function() {
 	
 	relative_path = dir.substring(root.length + 1);
@@ -12,7 +34,12 @@ $(document).ready( function() {
 			dir: relative_path 
 		}, 
 		function(file) {
-			window.location.replace(base_url(rel_path(file)));
+			console.log(file);
+			if ((ext = file_ext(file)) == 'md' || ext == 'markdown' || ext == 'txt') {
+				display_file_modal(file);
+			} else {
+				window.location.replace(base_url(rel_path(file)));
+			}
 		}, function (t) {
 				$(t).find('li').mouseenter(function() {
 					$(t).find('button').hide();
