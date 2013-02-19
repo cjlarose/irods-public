@@ -5,7 +5,7 @@ require_once 'php-markdown-1.0.1/markdown.php';
 if (!isset($_GET['file'])) 
 	exit('404');
 
-$file_path = $config['path'] . '/' . $_GET['file'];
+$file_path = $config['path'] . $_GET['file'];
 
 $account = new RODSAccount($config['server'], $config['port'], $config['username'], $config['password']);
 
